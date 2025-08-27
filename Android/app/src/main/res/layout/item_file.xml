@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    list_item_file.xml
+    Her satır bir dosya simgesi ve dosya adı içerir.
+    Dosya adları uzun olursa ... ile kısaltılır.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"> <!-- Tıklanabilir arka plan efekti -->
+
+    <!-- Dosya simgesi -->
+    <ImageView
+        android:id="@+id/ivFileIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_save"
+        android:contentDescription="Dosya ikonu" />
+
+    <!-- Dosya adı -->
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Dosya Adı"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

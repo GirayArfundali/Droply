@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dosya Yükle - Droply</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <!-- Üst başlık -->
+  <header>
+    <div>Droply</div>
+  </header>
+
+  <!-- Dosya yükleme alanı -->
+  <main>
+    <section class="upload-container">
+      <h2>Dosyalarınızı seçin ve yükleyin</h2>
+
+      <!-- Dosya seçme alanı -->
+      <label for="files" class="file-input-wrapper">
+        Dosya seçmek için tıklayın veya dosyaları buraya sürükleyin
+        <input type="file" id="files" multiple accept=".jpg,.jpeg,.png,.gif,.pdf" />
+      </label>
+
+      <!-- Seçilen dosyalar listesi -->
+      <ul id="fileList"></ul>
+
+      <!-- Yükleme butonu -->
+      <button id="uploadBtn" disabled>Dosyaları Yükle</button>
+
+      <!-- Yükleme durum mesajları -->
+      <div id="loadingSpinner" style="display:none;"></div>
+      <div id="loadingText"></div>
+
+      <!-- İlerleme çubuğu -->
+      <div id="progressContainer" style="display:none;">
+        <div id="progressBar">
+          <div id="progressBarInner"></div>
+        </div>
+        <div id="progressText">0%</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ayrı JS dosyası -->
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Menü öğesi: Dosyalar sekmesi
+        - id: nav_files (Seçildiğinde dosya listesi fragment'i yüklenir)
+        - icon: Ajanda simgesi
+        - title: "Dosyalar"
+    -->
+    <item
+        android:id="@+id/nav_files"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Dosyalar" />
+
+    <!--
+        Menü öğesi: Dosya Yükle sekmesi
+        - id: nav_upload (Seçildiğinde dosya yükleme fragment'i yüklenir)
+        - icon: Yükleme simgesi
+        - title: "Dosya Yükle"
+    -->
+    <item
+        android:id="@+id/nav_upload"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="Dosya Yükle" />
+
+</menu>
