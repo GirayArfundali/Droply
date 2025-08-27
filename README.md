@@ -19,3 +19,5 @@ Mobile: Kotlin, Android (Development Environment: Android Studio)
 Backend: Node.js (Development Environment: Visual Studio Code)
 
 API: Firebase Cloud Messaging (FCM)
+--------------------------------------------------
+https://github.com/user-attachments/assets/d8d7d1da-8dc9-4076-aa42-fb4c8de5e39b
